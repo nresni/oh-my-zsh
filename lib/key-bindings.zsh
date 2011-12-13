@@ -20,8 +20,8 @@ bindkey "^[[4~" end-of-line
 bindkey "^[OF" end-of-line
 bindkey ' ' magic-space    # also do history expansion on space
 
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
+#bindkey "^[[1;5C" forward-word
+#bindkey "^[[1;5D" backward-word
 
 bindkey '^[[Z' reverse-menu-complete
 
@@ -37,8 +37,8 @@ bindkey "\e[3~" delete-char
 #
 #bindkey '^[[A' up-line-or-search
 #bindkey '^[[B' down-line-or-search
-#bindkey '^[^[[C' emacs-forward-word
-#bindkey '^[^[[D' emacs-backward-word
+bindkey '^[^[[C' emacs-forward-word
+bindkey '^[^[[D' emacs-backward-word
 #
 #bindkey -s '^X^Z' '%-^M'
 #bindkey '^[e' expand-cmd-path
